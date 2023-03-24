@@ -1,0 +1,19 @@
+.label{
+    -fx-background-radius: 10;
+    -fx-border-radius: 5;
+}
+.button{
+    -fx-background-radius: 10;
+    -fx-border-radius: 5;
+    -fx-background-color:blue;
+    -fx-text-fill: white;
+}
+.textfield{
+    -fx-background-radius: 10;
+    -fx-border-radius: 5;
+    
+}
+#EnterAbout,#EnterHome,#EnterContact,#EnterTittle{
+    -fx-font-size: 15px;
+    -fx-text-fill: red;
+}

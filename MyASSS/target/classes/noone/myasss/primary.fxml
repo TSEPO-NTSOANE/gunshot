@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+
+
+<Pane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="690.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="noone.myasss.PrimaryController">
+   <children>
+      <AnchorPane layoutX="-1.0" prefHeight="690.0" prefWidth="326.0" style="-fx-background-color: greenyellow;">
+         <children>
+            <Label layoutX="84.0" layoutY="6.0" text="All MATERIALS TO BE USED" />
+            <TextField fx:id="EnterTittleLabel" layoutX="5.0" layoutY="59.0" prefHeight="25.0" prefWidth="305.0" />
+            <TextField fx:id="EnterHomeLabel" layoutX="5.0" layoutY="108.0" prefHeight="25.0" prefWidth="305.0" />
+            <TextField fx:id="EnterContactLabel" layoutX="5.0" layoutY="157.0" prefHeight="25.0" prefWidth="305.0" />
+            <TextField fx:id="EnterAboutLabel" layoutX="5.0" layoutY="208.0" prefHeight="25.0" prefWidth="305.0" />
+            <Label fx:id="EnterTittle" layoutX="6.0" layoutY="42.0" text="Enter the Tittle of Your Web Page" />
+            <Label fx:id="EnterHome" layoutX="9.0" layoutY="91.0" text="Enter Name of Home " />
+            <Label fx:id="EnterContact" layoutX="10.0" layoutY="140.0" text="Enter Name of Contact Button" />
+            <Label fx:id="EnterAbout" layoutX="6.0" layoutY="191.0" text="Enter Name of About Page" />
+            <Button layoutX="261.0" layoutY="239.0" mnemonicParsing="false" onAction="#addLabel" text="Apply" />
+            <ColorPicker fx:id="colorPicker" layoutX="11.0" layoutY="271.0" prefHeight="25.0" prefWidth="305.0" />
+            <Button layoutX="11.0" layoutY="307.0" mnemonicParsing="false" onAction="#ImageChooserFile1" text="Image" />
+            <Button layoutX="67.0" layoutY="307.0" mnemonicParsing="false" onAction="#ImageChooserFile" text="NavImage" />
+            <Button layoutX="143.0" layoutY="307.0" mnemonicParsing="false" onAction="#Background" text="Background" />
+            <Button layoutX="230.0" layoutY="307.0" mnemonicParsing="false" onAction="#bgChange" text="HomeBg" />
+            <Button layoutX="4.0" layoutY="345.0" mnemonicParsing="false" onAction="#bgChange1" text="AboutBg" />
+            <Button layoutX="73.0" layoutY="345.0" mnemonicParsing="false" onAction="#bgChange2" text="ContactBg" />
+            <Button layoutX="153.0" layoutY="345.0" mnemonicParsing="false" onAction="#increaseFontSize" text="InFontSize" />
+            <Button layoutX="231.0" layoutY="345.0" mnemonicParsing="false" onAction="#decreaseFontSize" text="DeFontSize" />
+            <Button layoutX="68.0" layoutY="384.0" mnemonicParsing="false" onAction="#changeFontColor" text="FontColor" />
+            <Button layoutX="155.0" layoutY="384.0" mnemonicParsing="false" onAction="#increaseFontSize1" text="InFontSzT" />
+            <Button layoutX="233.0" layoutY="384.0" mnemonicParsing="false" onAction="#decreaseFontSize1" text="DeFontSzT" />
+            <Button layoutX="13.0" layoutY="384.0" mnemonicParsing="false" onAction="#Background1" text="NavC" />
+         </children>
+      </AnchorPane>
+      <ImageView fx:id="NavImage" fitHeight="125.0" fitWidth="200.0" layoutX="332.0" pickOnBounds="true" preserveRatio="true" />
+      <HBox fx:id="NavBar" layoutX="443.0" layoutY="-1.0" prefHeight="125.0" prefWidth="559.0" style="-fx-background-color: red;" />
+      <HBox fx:id="Tittle" layoutX="458.0" layoutY="125.0" prefHeight="62.0" prefWidth="526.0" />
+      <ImageView fx:id="NavImage1" fitHeight="195.0" fitWidth="305.0" layoutX="572.0" layoutY="270.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</Pane>
